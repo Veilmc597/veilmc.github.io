@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeilMC.pl | Nowoczesny serwer Minecraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Veil<span>MC</span></div>
+    <nav>
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('tryby')">Tryby</a>
+        <a onclick="showSection('start')">Jak zacząć</a>
+        <a onclick="showSection('regulamin')">Regulamin</a>
+        <a href="https://discord.gg/8VMQgcD52W" target="_blank">Discord</a>
+    </nav>
+</header>
+
+<main>
+
+    <section id="home" class="section active">
+        <h1>VeilMC</h1>
+        <p class="subtitle">Nowoczesny serwer Minecraft – Survival • Gildie • Lifesteal</p>
+
+        <div class="ip-box">
+            <span>IP SERWERA</span>
+            <strong id="ip">VeilMC.pl</strong>
+            <button onclick="copyIP()">Skopiuj IP</button>
+        </div>
+
+        <p class="version">Wersja: Minecraft 1.21.1</p>
+    </section>
+
+    <section id="tryby" class="section">
+        <h2>Tryby gry</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Survival</h3>
+                <p>Klasyczny survival w nowoczesnym wydaniu, bez nudy i zbalansowany.</p>
+            </div>
+
+            <div class="card">
+                <h3>Gildie</h3>
+                <p>Twórz gildie, walcz o dominację i kontroluj świat razem z ekipą.</p>
+            </div>
+
+            <div class="card">
+                <h3>Lifesteal</h3>
+                <p>Zabijaj graczy, kradnij serca i ryzykuj wszystko w PvP.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="start" class="section">
+        <h2>Jak zacząć?</h2>
+        <ol>
+            <li>Uruchom Minecraft <strong>1.21.1</strong></li>
+            <li>Wejdź w tryb Multiplayer</li>
+            <li>Dodaj serwer: <strong>VeilMC.pl</strong></li>
+            <li>Dołącz i rozpocznij grę</li>
+            <li>Dołącz na Discorda, aby być na bieżąco</li>
+        </ol>
+    </section>
+
+    <section id="regulamin" class="section">
+        <h2>Regulamin (skrót)</h2>
+        <ul>
+            <li>Zakaz używania cheatów, x-ray, exploitów</li>
+            <li>Zakaz obrażania innych graczy</li>
+            <li>Administracja ma zawsze ostatnie słowo</li>
+            <li>Błędy zgłaszamy – nie wykorzystujemy</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 VeilMC.pl • Wszystkie prawa zastrzeżone</p>
+</footer>
+
+<script>
+function showSection(id) {
+    document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+}
+
+function copyIP() {
+    navigator.clipboard.writeText("VeilMC.pl");
+    alert("IP serwera zostało skopiowane!");
+}
+</script>
+
+</body>
+</html>
