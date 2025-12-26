@@ -41,39 +41,40 @@ nav a:hover {
     color: #00ff66;
 }
 
-/* CONTENT */
+/* PAGE */
 .page {
     max-width: 900px;
-    margin: 80px auto;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+/* SEKCJE */
+.rule-section {
+    margin-bottom: 60px;
     text-align: center;
 }
 
-/* SECTION TITLES – NAPRAWIONE */
 .section-title {
-    display: inline-block;          /* ⬅️ KLUCZOWE */
-    padding: 10px 28px;              /* mniejszy prostokąt */
+    display: inline-block;
+    padding: 10px 35px;
     border: 2px solid #00ff66;
+    margin-bottom: 25px;
     font-size: 22px;
-    font-weight: bold;
-    margin: 60px auto 25px;
 }
 
-.section-title.center {
-    margin-top: 0;
-}
-
-/* LISTY – TEKST WRACA */
-.rules {
-    max-width: 700px;                /* ⬅️ WIĘCEJ MIEJSCA */
-    margin: 0 auto 50px;
+/* LISTY */
+.rule-section ol {
+    max-width: 750px;
+    margin: 0 auto;
     text-align: left;
-    list-style-position: inside;
+    padding-left: 20px;
 }
 
-.rules li {
-    margin: 10px 0;
+.rule-section li {
+    margin-bottom: 12px;
     font-size: 15px;
-    line-height: 1.6;
+    line-height: 1.7;
 }
+
 
 
