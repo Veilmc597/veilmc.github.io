@@ -88,6 +88,14 @@ function copyIP() {
     alert("IP serwera zostało skopiowane!");
 }
 </script>
+<script>
+window.addEventListener("load", () => {
+    const hash = window.location.hash.replace("#", "");
+    if (hash) {
+        showSection(hash);
+    }
+});
+</script>
 
 </body>
 </html>
