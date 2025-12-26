@@ -193,3 +193,14 @@ ol li::before {
     color: #00ff66;
     font-weight: bold;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
