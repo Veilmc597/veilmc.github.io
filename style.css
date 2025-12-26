@@ -48,27 +48,26 @@ nav a:hover {
     text-align: center;
 }
 
-/* SECTION TITLES */
+/* SECTION TITLES – NAPRAWIONE */
 .section-title {
-    display: inline-block;
-    margin: 60px auto 25px;
-    padding: 12px 30px;
+    display: inline-block;          /* ⬅️ KLUCZOWE */
+    padding: 10px 28px;              /* mniejszy prostokąt */
     border: 2px solid #00ff66;
     font-size: 22px;
     font-weight: bold;
+    margin: 60px auto 25px;
 }
 
 .section-title.center {
-    display: block;
     margin-top: 0;
 }
 
-/* LISTS */
+/* LISTY – TEKST WRACA */
 .rules {
-    list-style-position: inside;
+    max-width: 700px;                /* ⬅️ WIĘCEJ MIEJSCA */
+    margin: 0 auto 50px;
     text-align: left;
-    max-width: 600px;
-    margin: 0 auto 40px;
+    list-style-position: inside;
 }
 
 .rules li {
@@ -76,4 +75,5 @@ nav a:hover {
     font-size: 15px;
     line-height: 1.6;
 }
+
 
