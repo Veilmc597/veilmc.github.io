@@ -1,143 +1,110 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* TŁO STRONY */
 body {
-    background: linear-gradient(135deg, #050b1f, #0b1e4a);
-    color: white;
+    background-color: #08142d;
+    color: #ffffff;
+    min-height: 100vh;
 }
 
-/* GÓRNY PASEK */
-.topbar {
-    height: 70px;
-    background: linear-gradient(90deg, #020617, #0b2a66);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
-}
-
-.topbar .logo {
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.topbar nav a {
-    color: #cfd8ff;
-    margin-left: 25px;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.topbar nav a:hover {
-    color: #4da3ff;
-}
-
-/* HERO */
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px;
-    min-height: calc(100vh - 70px);
-}
-
-/* LEWA */
-.hero-text h1 {
-    font-size: 56px;
-    margin-bottom: 15px;
-}
-
-.hero-text p {
-    font-size: 18px;
-    opacity: 0.9;
-    margin-bottom: 30px;
-}
-
-.ip-box {
-    background: linear-gradient(135deg, #1ecbff, #1e7cff);
-    padding: 18px 26px;
-    border-radius: 14px;
-    cursor: pointer;
-    display: inline-block;
-}
-
-.ip-box strong {
-    font-size: 20px;
-    display: block;
-}
-
-.ip-box span {
-    font-size: 13px;
-    opacity: 0.9;
-}
-
-/* PRAWA – FILM */
-.hero-video {
-    position: relative;
-    width: 420px;
-    height: 240px;
-    background: black;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 0 40px rgba(0,0,0,0.6);
-}
-
-.hero-video video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* IP NA FILMIE */
-.video-ip {
-    position: absolute;
-    left: 15px;
-    bottom: 15px;
-    background: rgba(0,0,0,0.65);
-    padding: 10px 16px;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
+/* ===== GÓRNY PASEK ===== */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background: rgba(8, 20, 45, 0.95);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(6px);
 }
 
-.video-ip:hover {
-    background: rgba(30,120,255,0.8);
+/* NAWIGACJA */
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
 }
-/* === STRONY TREŚCI (TRYBY / REGULAMIN / JAK ZACZĄĆ) === */
 
-.page {
-    min-height: calc(100vh - 70px);
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #050b1f, #0b1e4a);
+/* LINKI */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
 }
 
-.page h1 {
+nav a:hover {
+    color: #4da6ff;
+}
+
+/* ===== SEKCJE ===== */
+.main-content {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
     text-align: center;
-    font-size: 42px;
-    margin-bottom: 40px;
 }
 
-.content-box {
-    max-width: 900px;
-    margin: 0 auto 30px auto;
-    background: rgba(255,255,255,0.06);
-    border-radius: 16px;
+/* BLOKI */
+.box {
+    background: #0e1e3f;
+    border-radius: 14px;
     padding: 30px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    margin: 30px auto;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
 }
 
-.content-box h2 {
-    color: #4da3ff;
-    margin-bottom: 15px;
+/* NAGŁÓWKI */
+h1, h2 {
+    margin-bottom: 20px;
 }
 
-.content-box p {
-    line-height: 1.7;
-    opacity: 0.95;
+/* ===== IP SERWERA ===== */
+.server-ip {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #1c3fa8;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.server-ip:hover {
+    background: #2f5bff;
+    transform: scale(1.05);
+}
+
+/* ANIMACJA „SKOPIOWANO” */
+.copy-info {
+    margin-top: 10px;
+    color: #7cff7c;
+    font-size: 14px;
+    display: none;
+}
+
+/* ===== FILM ===== */
+.video-box {
+    width: 320px;
+    height: 180px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    margin-left: auto;
+}
+
+.video-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
