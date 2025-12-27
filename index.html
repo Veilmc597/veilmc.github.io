@@ -7,52 +7,23 @@
 </head>
 <body>
 
-<!-- GÓRNY PASEK – ZOSTAJE -->
-<header class="topbar">
-    <div class="logo">VeilMC</div>
+<header>
+    <div class="logo">Veil<span>MC</span></div>
     <nav>
         <a href="index.html">Home</a>
         <a href="tryby.html">Tryby</a>
         <a href="jak-zaczac.html">Jak zacząć</a>
         <a href="regulamin.html">Regulamin</a>
-        <a href="https://discord.gg/" target="_blank">Discord</a>
     </nav>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-
-    <!-- LEWA STRONA -->
-    <div class="hero-text">
-        <h1>VeilMC</h1>
-        <p>Serwer Minecraft Survival + Gildie</p>
-
-        <div class="ip-box" onclick="copyIP()">
-            <strong>veilmc.pl</strong>
-            <span>Kliknij aby skopiować</span>
-        </div>
+<div class="container">
+    <div class="box">
+        <div class="box-title">Witaj na VeilMC</div>
+        <p>Najlepszy serwer Minecraft Survival z systemem gildii.</p>
+        <p><b>IP serwera:</b> veilmc.pl</p>
     </div>
-
-    <!-- PRAWA STRONA – FILM -->
-    <div class="hero-video">
-        <video autoplay muted loop playsinline>
-            <source src="veilmc-film.mp4" type="video/mp4">
-        </video>
-
-        <!-- IP NACHODZĄCE NA FILM -->
-        <div class="video-ip" onclick="copyIP()">
-            veilmc.pl
-        </div>
-    </div>
-
-</section>
-
-<script>
-function copyIP() {
-    navigator.clipboard.writeText("veilmc.pl");
-    alert("Skopiowano IP: veilmc.pl");
-}
-</script>
+</div>
 
 </body>
 </html>
