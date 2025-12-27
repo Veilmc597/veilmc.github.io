@@ -9,29 +9,30 @@
 <body>
 
 <header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="tryby.html">Tryby</a>
-    <a href="jak-zaczac.html">Jak zacząć</a>
-    <a href="regulamin.html">Regulamin</a>
-    <a href="#">Discord</a>
-  </nav>
+  <div class="nav">
+    <div class="logo">VeilMC</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="tryby.html">Tryby</a>
+      <a href="jak-zaczac.html">Jak zacząć</a>
+      <a href="regulamin.html">Regulamin</a>
+      <a href="#">Discord</a>
+    </div>
+  </div>
 </header>
 
-<main class="hero">
+<section class="hero">
 
-  <!-- LEWA STRONA -->
   <div class="hero-left">
     <h1>VeilMC</h1>
     <p>Serwer Minecraft Survival + Gildie</p>
 
     <div class="ip-box" onclick="copyIP()">
-      <span id="ip-text">veilmc.pl</span><br>
+      <span>veilmc.pl</span><br>
       <small id="copy-info">Kliknij aby skopiować</small>
     </div>
   </div>
 
-  <!-- PRAWA STRONA – FILM -->
   <div class="hero-right">
     <div class="video-box">
       <video autoplay loop muted playsinline>
@@ -40,7 +41,7 @@
     </div>
   </div>
 
-</main>
+</section>
 
 <script>
 function copyIP() {
@@ -55,4 +56,5 @@ function copyIP() {
 
 </body>
 </html>
+
 
