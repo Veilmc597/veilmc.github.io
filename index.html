@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <title>VeilMC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>VeilMC</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- GÓRNY PASEK – ZOSTAJE -->
 <header class="topbar">
-  <div class="logo">VeilMC</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="tryby.html">Tryby</a>
-    <a href="jak-zaczac.html">Jak zacząć</a>
-    <a href="regulamin.html">Regulamin</a>
-    <a href="#">Discord</a>
-  </nav>
+    <div class="logo">VeilMC</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tryby.html">Tryby</a>
+        <a href="jak-zaczac.html">Jak zacząć</a>
+        <a href="regulamin.html">Regulamin</a>
+        <a href="https://discord.gg/" target="_blank">Discord</a>
+    </nav>
 </header>
 
-<main class="hero">
-  <div class="hero-left">
-    <h1>VeilMC</h1>
-    <p>Serwer Minecraft Survival + Gildie</p>
+<!-- HERO -->
+<section class="hero">
 
-    <div class="ip-box" onclick="copyIP()">
-      <span id="ip-text">veilmc.pl</span>
-      <small id="copy-info">Kliknij aby skopiować</small>
-    </div>
-  </div>
+    <!-- LEWA STRONA -->
+    <div class="hero-text">
+        <h1>VeilMC</h1>
+        <p>Serwer Minecraft Survival + Gildie</p>
 
-  <div class="hero-right">
-    <div class="video-box">
-      <video autoplay loop muted playsinline>
-        <source src="veilmc-film.mp4" type="video/mp4">
-      </video>
+        <div class="ip-box" onclick="copyIP()">
+            <strong>veilmc.pl</strong>
+            <span>Kliknij aby skopiować</span>
+        </div>
     </div>
-  </div>
-</main>
+
+    <!-- PRAWA STRONA – FILM -->
+    <div class="hero-video">
+        <video autoplay muted loop playsinline>
+            <source src="veilmc-film.mp4" type="video/mp4">
+        </video>
+
+        <!-- IP NACHODZĄCE NA FILM -->
+        <div class="video-ip" onclick="copyIP()">
+            veilmc.pl
+        </div>
+    </div>
+
+</section>
 
 <script>
 function copyIP() {
-  navigator.clipboard.writeText("veilmc.pl");
-  const info = document.getElementById("copy-info");
-  info.innerText = "Skopiowano!";
-  setTimeout(() => {
-    info.innerText = "Kliknij aby skopiować";
-  }, 2000);
+    navigator.clipboard.writeText("veilmc.pl");
+    alert("Skopiowano IP: veilmc.pl");
 }
 </script>
 
