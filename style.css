@@ -99,5 +99,37 @@ nav a:hover {
   height: 100%;
   object-fit: cover;
 }
+/* ===== HERO LAYOUT FIX ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+.hero-left {
+  max-width: 500px;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ===== VIDEO ===== */
+.video-box {
+  width: 360px;
+  height: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 140, 255, 0.6);
+  border: 2px solid rgba(0, 140, 255, 0.7);
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 
