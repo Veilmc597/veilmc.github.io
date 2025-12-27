@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<title>VeilMC</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>VeilMC</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-  <div class="logo">Veil<span>MC</span></div>
   <nav>
-    <a href="/#home">Home</a>
-    <a href="/#tryby">Tryby</a>
-    <a href="/#start">Jak zacząć</a>
-    <a href="/regulamin.html">Regulamin</a>
-    <a href="https://discord.gg/8VMQcsD52W" target="_blank">Discord</a>
+    <a href="index.html">Home</a>
+    <a href="tryby.html">Tryby</a>
+    <a href="jak-zaczac.html">Jak zacząć</a>
+    <a href="regulamin.html">Regulamin</a>
+    <a href="#">Discord</a>
   </nav>
 </header>
 
 <main class="hero">
 
+  <!-- LEWA STRONA -->
   <div class="hero-left">
     <h1>VeilMC</h1>
     <p>Serwer Minecraft Survival + Gildie</p>
 
     <div class="ip-box" onclick="copyIP()">
-      <span id="ip-text">veilmc.pl</span>
+      <span id="ip-text">veilmc.pl</span><br>
       <small id="copy-info">Kliknij aby skopiować</small>
     </div>
   </div>
 
+  <!-- PRAWA STRONA – FILM -->
   <div class="hero-right">
-    <video autoplay loop muted playsinline>
-      <source src="veilmc-film.mp4" type="video/mp4">
-    </video>
+    <div class="video-box">
+      <video autoplay loop muted playsinline>
+        <source src="veilmc-film.mp4" type="video/mp4">
+      </video>
+    </div>
   </div>
 
 </main>
@@ -44,8 +47,6 @@ function copyIP() {
   navigator.clipboard.writeText("veilmc.pl");
   const info = document.getElementById("copy-info");
   info.innerText = "Skopiowano!";
-  info.style.opacity = "1";
-
   setTimeout(() => {
     info.innerText = "Kliknij aby skopiować";
   }, 2000);
