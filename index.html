@@ -31,17 +31,14 @@
             text-decoration: underline;
         }
 
-        /* BLOK Z TEKSTEM */
+        /* BLOK */
         .box {
             margin: 120px 60px;
             padding: 40px 50px;
-
-            /* ⬇️ TU JEST ZMIANA */
             background: linear-gradient(135deg, #1e6bff, #3b8cff);
             border-radius: 22px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
             border: 1px solid rgba(255, 255, 255, 0.25);
-
             max-width: 520px;
         }
 
@@ -62,16 +59,33 @@
             color: #eaf4ff;
             cursor: pointer;
             width: fit-content;
+            transition: transform 0.15s ease;
         }
 
         .ip:hover {
             text-decoration: underline;
+            transform: scale(1.03);
         }
 
         .ip-info {
             font-size: 14px;
             opacity: 0.85;
             margin-top: 4px;
+        }
+
+        /* NAPIS SKOPIOWANO */
+        .copied {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #d4f5ff;
+            opacity: 0;
+            transform: translateY(-5px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .copied.show {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
@@ -93,15 +107,30 @@
             Nowoczesny serwer Minecraft – Survival • Gildie • Lifesteal
         </div>
 
-        <div class="ip" onclick="navigator.clipboard.writeText('veilmc.pl')">
+        <div class="ip" onclick="copyIP()">
             veilmc.pl
         </div>
         <div class="ip-info">
             Kliknij, aby skopiować IP serwera
         </div>
+
+        <div id="copied" class="copied">
+            ✔ Skopiowano do schowka
+        </div>
     </div>
+
+    <script>
+        function copyIP() {
+            navigator.clipboard.writeText('veilmc.pl');
+
+            const copied = document.getElementById('copied');
+            copied.classList.add('show');
+
+            setTimeout(() => {
+                copied.classList.remove('show');
+            }, 1500);
+        }
+    </script>
 
 </body>
 </html>
-
-
