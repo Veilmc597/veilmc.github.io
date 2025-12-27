@@ -2,123 +2,32 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Tryby – VeilMC</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(180deg, #050f2e, #02091a);
-            color: #ffffff;
-        }
-
-        /* NAVBAR – TEN SAM CO RESZTA STRONY */
-        header {
-            background: linear-gradient(90deg, #071a4a, #0a2f7a);
-            padding: 15px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 22px;
-            color: #ffffff;
-        }
-
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin-left: 25px;
-            font-size: 15px;
-        }
-
-        nav a:hover {
-            color: #4cc2ff;
-        }
-
-        /* CONTENT */
-        .container {
-            max-width: 900px;
-            margin: 90px auto;
-            padding: 0 20px;
-            text-align: center;
-        }
-
-        .container h2 {
-            font-size: 36px;
-            margin-bottom: 50px;
-        }
-
-        .content-box {
-            background: rgba(255,255,255,0.06);
-            border-radius: 16px;
-            padding: 30px;
-            margin-bottom: 35px;
-            text-align: left;
-            box-shadow: 0 0 30px rgba(0,0,0,0.4);
-        }
-
-        .content-box h3 {
-            margin-top: 0;
-            color: #4cc2ff;
-        }
-
-        .content-box p {
-            line-height: 1.6;
-            margin-bottom: 10px;
-            color: #e1e8ff;
-        }
-    </style>
+    <title>Tryby - VeilMC</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>VeilMC</h1>
+    <div class="logo">Veil<span>MC</span></div>
     <nav>
         <a href="index.html">Home</a>
         <a href="tryby.html">Tryby</a>
         <a href="jak-zaczac.html">Jak zacząć</a>
         <a href="regulamin.html">Regulamin</a>
-        <a href="https://discord.gg/">Discord</a>
     </nav>
 </header>
 
 <div class="container">
-    <h2>Tryby gry</h2>
-
-    <div class="content-box">
-        <h3>Survival + Gildie</h3>
-        <p>
-            Klasyczny survival z systemem gildii, nastawiony na PvP i rywalizację.
-        </p>
-        <p>
-            ✔ System gildii<br>
-            ✔ Wojny gildii i PvP<br>
-            ✔ Eventy i dropy<br>
-            ✔ Stabilna i uczciwa rozgrywka
-        </p>
-    </div>
-
-    <div class="content-box">
-        <h3>Livesteal</h3>
-        <p>
-            Tryb PvP oparty na kradzieży serc od innych graczy.
-        </p>
-        <p>
-            ✔ Zabójstwo = +1 serce<br>
-            ✔ Śmierć = -1 serce<br>
-            ✔ Maksymalna liczba serc: <strong>15</strong><br>
-            ✔ Eliminacja po utracie wszystkich serc
-        </p>
-        <p>
-            Idealny tryb dla graczy lubiących ryzyko i dynamiczną walkę.
-        </p>
+    <div class="box">
+        <div class="box-title">Tryby Gry</div>
+        <ul>
+            <li><b>Survival + Gildie</b> – klasyczna rozgrywka PvP</li>
+            <li><b>Livesteal</b> – zabijasz → kradniesz serca (max 15 serc)</li>
+        </ul>
     </div>
 </div>
 
 </body>
 </html>
+
 
