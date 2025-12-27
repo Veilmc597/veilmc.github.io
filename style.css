@@ -6,70 +6,98 @@
 }
 
 body {
-    background: radial-gradient(circle at center, #2a2a2a, #0b0f2a);
-    color: #ffffff;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #0b1020, #0f1c3d);
+    color: #fff;
 }
 
-/* ===== NAVBAR ===== */
-.navbar {
+/* GÓRNY PASEK */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0 40px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
-    background: linear-gradient(90deg, #0b0f2a, #13174a);
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(8px);
+    z-index: 100;
 }
 
+/* LOGO */
 .logo {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
 }
 
 .logo span {
-    color: #00ff5a;
+    color: #4da3ff;
 }
 
-.navbar-right a {
-    margin-left: 25px;
-    color: #ffffff;
+/* MENU */
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    color: #ddd;
     text-decoration: none;
-    font-size: 15px;
+    font-weight: 500;
+    transition: 0.2s;
 }
 
-.navbar-right a.active {
-    color: #00ff5a;
+.nav a:hover,
+.nav a.active {
+    color: #4da3ff;
 }
 
-/* ===== REGULAMIN ===== */
-.regulamin {
-    max-width: 900px;
-    margin: 80px auto;
-    padding: 0 20px;
+/* GŁÓWNA TREŚĆ */
+.content {
+    min-height: 100vh;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.regulamin section {
-    margin-bottom: 60px;
-}
-
-.regulamin h2 {
-    display: inline-block;
-    padding: 10px 30px;
-    border: 2px solid #00ff5a;
-    border-radius: 6px;
-    margin-bottom: 20px;
-}
-
-.regulamin p {
-    margin-bottom: 8px;
-    line-height: 1.8;
-}
-
-.regulamin ol {
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-.regulamin li {
+/* TEKSTY */
+h1 {
+    font-size: 48px;
     margin-bottom: 10px;
-    line-height: 1.8;
+}
+
+.subtitle {
+    font-size: 18px;
+    opacity: 0.85;
+    margin-bottom: 40px;
+}
+
+/* BOXY */
+.box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    padding: 25px 35px;
+    margin: 15px 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+.box h2 {
+    margin-bottom: 10px;
+    color: #4da3ff;
+}
+
+code {
+    display: block;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
 }
 
