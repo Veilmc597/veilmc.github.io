@@ -3,29 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <title>Tryby – VeilMC</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #061a44, #020b2a);
+            color: #ffffff;
+        }
+
+        /* NAVBAR */
+        header {
+            background: linear-gradient(90deg, #0b2c6f, #0a3ea3);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* CONTENT */
+        .container {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .content-box {
+            background: rgba(255,255,255,0.08);
+            border-radius: 14px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .content-box h3 {
+            margin-top: 0;
+            color: #4cc2ff;
+        }
+
+        .content-box p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
 
-<header class="topbar">
-    <div class="logo">VeilMC</div>
+<header>
+    <h1>VeilMC</h1>
     <nav>
         <a href="index.html">Home</a>
         <a href="tryby.html">Tryby</a>
         <a href="jak-zaczac.html">Jak zacząć</a>
         <a href="regulamin.html">Regulamin</a>
-        <a href="https://discord.gg/" target="_blank">Discord</a>
+        <a href="https://discord.gg/">Discord</a>
     </nav>
 </header>
 
-<section class="page">
-    <h1>Tryby gry</h1>
+<div class="container">
+    <h2>Tryby gry</h2>
 
     <div class="content-box">
-        <h2>Survival + Gildie</h2>
-        <p>Klasyczny survival z systemem gildii, PvP i rywalizacją.</p>
+        <h3>Survival + Gildie</h3>
+        <p>
+            Klasyczny survival z rozbudowanym systemem gildii, PvP oraz rywalizacją między graczami.
+        </p>
+        <p>
+            ✔ System gildii<br>
+            ✔ PvP i wojny gildii<br>
+            ✔ Eventy i dropy<br>
+            ✔ Stabilna rozgrywka
+        </p>
     </div>
-</section>
+
+    <div class="content-box">
+        <h3>Livesteal</h3>
+        <p>
+            Dynamiczny tryb PvP, w którym za zabicie gracza kradniesz mu serce.
+        </p>
+        <p>
+            ✔ Zabójstwo = +1 serce<br>
+            ✔ Śmierć = -1 serce<br>
+            ✔ Maksymalna liczba serc: <strong>15</strong><br>
+            ✔ Eliminacja po utracie wszystkich serc
+        </p>
+        <p>
+            Tryb dla graczy lubiących ryzyko, walkę i szybką akcję.
+        </p>
+    </div>
+
+</div>
 
 </body>
 </html>
