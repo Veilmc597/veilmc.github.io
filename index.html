@@ -1,106 +1,17 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <title>VeilMC</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: white;
-            background: linear-gradient(135deg, #0a1a3a, #0b2d6b);
-            min-height: 100vh;
-        }
-
-        /* GÓRNY PASEK */
-        .top {
-            position: fixed;
-            top: 15px;
-            right: 25px;
-            z-index: 1000;
-        }
-
-        .top a {
-            color: #bfcfff;
-            text-decoration: none;
-            margin-left: 15px;
-            font-weight: bold;
-        }
-
-        .top a:hover {
-            color: white;
-            text-decoration: underline;
-        }
-
-        /* ŚRODEK STRONY */
-        .center {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100vh;
-            padding-left: 60px;
-        }
-
-        .title {
-            font-size: 42px;
-            font-weight: bold;
-        }
-
-        .desc {
-            margin-top: 10px;
-            font-size: 18px;
-            opacity: 0.9;
-        }
-
-        .ip {
-            margin-top: 30px;
-            font-size: 28px;
-            font-weight: bold;
+<div style="margin-top: 20px;">
+    <span 
+        onclick="navigator.clipboard.writeText('veilmc.pl')" 
+        style="
             cursor: pointer;
-            color: #8ab4ff;
-        }
-
-        .ip:hover {
-            color: white;
-        }
-
-        .info {
-            margin-top: 5px;
-            font-size: 14px;
-            opacity: 0.7;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- LINKI PRAWY GÓRNY RÓG -->
-    <div class="top">
-        <a href="index.html">Home</a>
-        <a href="tryby.html">Tryby</a>
-        <a href="jak-zaczac.html">Jak zacząć</a>
-        <a href="regulamin.html">Regulamin</a>
-        <a href="https://discord.gg/">Discord</a>
+            font-size: 22px;
+            font-weight: bold;
+            color: #9fd3ff;
+        "
+        title="Kliknij, aby skopiować IP"
+    >
+        veilmc.pl
+    </span>
+    <div style="font-size: 14px; opacity: 0.8;">
+        Kliknij, aby skopiować IP serwera
     </div>
-
-    <!-- TREŚĆ -->
-    <div class="center">
-        <div class="title">VeilMC</div>
-        <div class="desc">
-            Nowoczesny serwer Minecraft – Survival • Gildie • Lifesteal
-        </div>
-
-        <!-- KLIKANE IP -->
-        <div class="ip" onclick="copyIP()">veilmc.pl</div>
-        <div class="info">Kliknij, aby skopiować IP serwera</div>
-    </div>
-
-    <!-- SKRYPT KOPIOWANIA -->
-    <script>
-        function copyIP() {
-            navigator.clipboard.writeText("veilmc.pl");
-            alert("IP serwera skopiowane: veilmc.pl");
-        }
-    </script>
-
-</body>
-</html>
+</div>
