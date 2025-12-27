@@ -6,33 +6,36 @@
 }
 
 body {
-  background: linear-gradient(135deg, #0b2cff, #003399);
-  color: white;
   min-height: 100vh;
+  background: linear-gradient(135deg, #002bff, #005bff);
+  color: white;
 }
 
-/* ===== MENU ===== */
-header {
+/* GÓRNY PASEK */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px 40px;
 }
 
-nav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
+.topbar .logo {
+  font-size: 22px;
   font-weight: bold;
 }
 
-nav a:hover {
+.topbar nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.topbar nav a:hover {
   text-decoration: underline;
 }
 
-/* ===== HERO ===== */
+/* HERO */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -40,33 +43,25 @@ nav a:hover {
   padding: 80px 60px;
 }
 
-/* LEWA */
-.hero-left {
-  max-width: 500px;
-}
-
+/* LEWA STRONA */
 .hero-left h1 {
-  font-size: 48px;
+  font-size: 64px;
   margin-bottom: 10px;
 }
 
 .hero-left p {
   font-size: 18px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 /* IP BOX */
 .ip-box {
-  background: linear-gradient(135deg, #00b4ff, #0094ff);
-  padding: 18px 24px;
-  border-radius: 14px;
+  display: inline-block;
+  background: linear-gradient(135deg, #00d4ff, #00a2ff);
+  padding: 18px 26px;
+  border-radius: 16px;
   cursor: pointer;
-  width: fit-content;
-  box-shadow: 0 0 20px rgba(0, 150, 255, 0.6);
-}
-
-.ip-box:hover {
-  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(0,200,255,0.6);
 }
 
 .ip-box span {
@@ -75,55 +70,26 @@ nav a:hover {
 }
 
 .ip-box small {
-  opacity: 0.8;
+  display: block;
+  font-size: 12px;
+  opacity: 0.9;
+  margin-top: 4px;
 }
 
-/* PRAWA – VIDEO */
+/* PRAWA STRONA – FILM */
 .hero-right {
-  width: 50%;
   display: flex;
-  justify-content: flex-end;
-}
-
-.video-box {
-  width: 360px;
-  height: 200px;
-  border-radius: 16px;
-  overflow: hidden;
-  border: 2px solid rgba(0, 150, 255, 0.7);
-  box-shadow: 0 0 30px rgba(0, 150, 255, 0.5);
-}
-
-.video-box video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-/* ===== HERO LAYOUT FIX ===== */
-.hero {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 80px;
 }
 
-.hero-left {
-  max-width: 500px;
-}
-
-.hero-right {
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* ===== VIDEO ===== */
 .video-box {
   width: 360px;
   height: 200px;
-  border-radius: 16px;
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 0 25px rgba(0, 140, 255, 0.6);
-  border: 2px solid rgba(0, 140, 255, 0.7);
+  border: 2px solid rgba(0,200,255,0.8);
+  box-shadow: 0 0 25px rgba(0,200,255,0.7);
 }
 
 .video-box video {
@@ -131,5 +97,6 @@ nav a:hover {
   height: 100%;
   object-fit: cover;
 }
+
 
 
