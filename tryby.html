@@ -2,32 +2,120 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Tryby - VeilMC</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tryby – VeilMC</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(180deg, #061b3a, #031226);
+            color: #ffffff;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: linear-gradient(90deg, #041c3a, #062b5c);
+            padding: 16px 40px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #4fc3ff;
+        }
+
+        .logo span {
+            color: #ffffff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #4fc3ff;
+        }
+
+        /* ===== CONTENT ===== */
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 120px;
+        }
+
+        .box {
+            background: #0b2f63;
+            padding: 40px;
+            border-radius: 16px;
+            width: 520px;
+        }
+
+        .box h1 {
+            background: #2cc6ff;
+            color: #001b33;
+            padding: 10px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .box ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .box li {
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-    <div class="logo">Veil<span>MC</span></div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="tryby.html">Tryby</a>
-        <a href="jak-zaczac.html">Jak zacząć</a>
-        <a href="regulamin.html">Regulamin</a>
-    </nav>
+    <div class="navbar">
+        <div class="logo">Veil<span>MC</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tryby.html">Tryby</a>
+            <a href="jak-zaczac.html">Jak zacząć</a>
+            <a href="regulamin.html">Regulamin</a>
+        </div>
+    </div>
 </header>
 
 <div class="container">
     <div class="box">
-        <div class="box-title">Tryby Gry</div>
+        <h1>Tryby Gry</h1>
+
         <ul>
-            <li><b>Survival + Gildie</b> – klasyczna rozgrywka PvP</li>
-            <li><b>Livesteal</b> – zabijasz → kradniesz serca (max 15 serc)</li>
+            <li><b>Survival + Gildie</b> – klasyczna rozgrywka PvP z systemem gildii i rywalizacją.</li>
+            <li><b>Livesteal</b> – zabijasz graczy i kradniesz im serca (maksymalnie 15 serc).</li>
         </ul>
     </div>
 </div>
 
 </body>
 </html>
-
-
