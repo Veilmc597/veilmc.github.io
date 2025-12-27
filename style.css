@@ -1,110 +1,80 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-/* TŁO STRONY */
 body {
-    background-color: #08142d;
-    color: #ffffff;
-    min-height: 100vh;
+    background: #0b1a2f;
+    color: #e6ecf5;
 }
 
-/* ===== GÓRNY PASEK ===== */
+/* ===== HEADER ===== */
 header {
     position: sticky;
     top: 0;
-    z-index: 9999;
-    background: rgba(8, 20, 45, 0.95);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    background: rgba(10, 25, 50, 0.95);
     backdrop-filter: blur(6px);
-}
-
-/* NAWIGACJA */
-nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 30px;
+    padding: 15px 40px;
     display: flex;
-    justify-content: flex-end;
-    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
-/* LINKI */
-nav a {
-    color: #ffffff;
-    text-decoration: none;
+.logo {
+    font-size: 26px;
     font-weight: bold;
-    transition: color 0.2s ease;
+    color: #4da3ff;
+}
+
+.logo span {
+    color: #ffffff;
+}
+
+nav a {
+    color: #e6ecf5;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
 }
 
 nav a:hover {
-    color: #4da6ff;
+    color: #4da3ff;
 }
 
-/* ===== SEKCJE ===== */
-.main-content {
-    max-width: 1200px;
-    margin: 60px auto;
+/* ===== CONTENT ===== */
+.container {
+    max-width: 1000px;
+    margin: 80px auto;
     padding: 0 20px;
     text-align: center;
 }
 
-/* BLOKI */
 .box {
-    background: #0e1e3f;
+    background: #11264a;
     border-radius: 14px;
     padding: 30px;
-    margin: 30px auto;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
 }
 
-/* NAGŁÓWKI */
-h1, h2 {
+.box-title {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 12px;
+    background: #1e90ff;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
-/* ===== IP SERWERA ===== */
-.server-ip {
-    display: inline-block;
-    padding: 15px 30px;
-    background: #1c3fa8;
-    border-radius: 14px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    transition: background 0.2s ease, transform 0.2s ease;
+ul, ol {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.7;
 }
-
-.server-ip:hover {
-    background: #2f5bff;
-    transform: scale(1.05);
-}
-
-/* ANIMACJA „SKOPIOWANO” */
-.copy-info {
-    margin-top: 10px;
-    color: #7cff7c;
-    font-size: 14px;
-    display: none;
-}
-
-/* ===== FILM ===== */
-.video-box {
-    width: 320px;
-    height: 180px;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
-    margin-left: auto;
-}
-
-.video-box video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
