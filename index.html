@@ -3,32 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>VeilMC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-  <div class="nav">
-    <div class="logo">VeilMC</div>
-    <div class="menu">
-      <a href="index.html">Home</a>
-      <a href="tryby.html">Tryby</a>
-      <a href="jak-zaczac.html">Jak zacząć</a>
-      <a href="regulamin.html">Regulamin</a>
-      <a href="#">Discord</a>
-    </div>
-  </div>
+<header class="topbar">
+  <div class="logo">VeilMC</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="tryby.html">Tryby</a>
+    <a href="jak-zaczac.html">Jak zacząć</a>
+    <a href="regulamin.html">Regulamin</a>
+    <a href="#">Discord</a>
+  </nav>
 </header>
 
-<section class="hero">
-
+<main class="hero">
   <div class="hero-left">
     <h1>VeilMC</h1>
     <p>Serwer Minecraft Survival + Gildie</p>
 
     <div class="ip-box" onclick="copyIP()">
-      <span>veilmc.pl</span><br>
+      <span id="ip-text">veilmc.pl</span>
       <small id="copy-info">Kliknij aby skopiować</small>
     </div>
   </div>
@@ -40,8 +37,7 @@
       </video>
     </div>
   </div>
-
-</section>
+</main>
 
 <script>
 function copyIP() {
@@ -56,5 +52,3 @@ function copyIP() {
 
 </body>
 </html>
-
-
