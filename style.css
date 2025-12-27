@@ -108,4 +108,36 @@ body {
 .video-ip:hover {
     background: rgba(30,120,255,0.8);
 }
+/* === STRONY TREŚCI (TRYBY / REGULAMIN / JAK ZACZĄĆ) === */
+
+.page {
+    min-height: calc(100vh - 70px);
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #050b1f, #0b1e4a);
+}
+
+.page h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.content-box {
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    background: rgba(255,255,255,0.06);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+
+.content-box h2 {
+    color: #4da3ff;
+    margin-bottom: 15px;
+}
+
+.content-box p {
+    line-height: 1.7;
+    opacity: 0.95;
+}
 
