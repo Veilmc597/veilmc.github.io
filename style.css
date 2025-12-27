@@ -1,78 +1,111 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-  min-height: 100vh;
-  background: radial-gradient(circle at top, #0f1e3a, #050b1c);
-  color: #e6f0ff;
+    background: linear-gradient(135deg, #050b1f, #0b1e4a);
+    color: white;
 }
 
-/* ===== TOPBAR ===== */
+/* GÓRNY PASEK */
 .topbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 60px;
-  background: rgba(5, 10, 25, 0.95);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  z-index: 1000;
+    height: 70px;
+    background: linear-gradient(90deg, #020617, #0b2a66);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
 }
 
-.logo {
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
+.topbar .logo {
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .topbar nav a {
-  color: #bcdcff;
-  text-decoration: none;
-  margin-left: 14px;
-  font-size: 14px;
+    color: #cfd8ff;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .topbar nav a:hover {
-  color: #4fc3ff;
+    color: #4da3ff;
 }
 
-/* ===== CONTENT ===== */
-.page {
-  padding: 100px 16px 60px;
-  max-width: 900px;
-  margin: auto;
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    min-height: calc(100vh - 70px);
 }
 
-.page h1 {
-  text-align: center;
-  font-size: 34px;
-  margin-bottom: 30px;
+/* LEWA */
+.hero-text h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
 }
 
-/* ===== CARDS ===== */
-.card {
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 18px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(6px);
+.hero-text p {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 30px;
 }
 
-.card h2 {
-  color: #4fc3ff;
-  margin-bottom: 10px;
-  font-size: 18px;
+.ip-box {
+    background: linear-gradient(135deg, #1ecbff, #1e7cff);
+    padding: 18px 26px;
+    border-radius: 14px;
+    cursor: pointer;
+    display: inline-block;
 }
 
-.card p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #d7e7ff;
+.ip-box strong {
+    font-size: 20px;
+    display: block;
 }
+
+.ip-box span {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+/* PRAWA – FILM */
+.hero-video {
+    position: relative;
+    width: 420px;
+    height: 240px;
+    background: black;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0,0,0,0.6);
+}
+
+.hero-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* IP NA FILMIE */
+.video-ip {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    background: rgba(0,0,0,0.65);
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+}
+
+.video-ip:hover {
+    background: rgba(30,120,255,0.8);
+}
+
