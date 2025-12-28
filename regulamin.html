@@ -6,21 +6,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-/* ====== GLOBAL ====== */
+/* ===== GLOBAL ===== */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #041426; /* BARDZO CIEMNY (jak Tryby) */
+    background: radial-gradient(circle at top, #041b3a 0%, #020f24 60%, #020b1a 100%);
     color: #ffffff;
 }
 
-/* ====== NAVBAR ====== */
+/* ===== NAVBAR ===== */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
     height: 80px;
-    background: linear-gradient(90deg, #061f3a, #072f5c);
+    background: linear-gradient(90deg, #062b5c, #063a7a);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,38 +43,37 @@ body {
     transition: color 0.2s ease;
 }
 
-.navbar nav a:hover {
-    color: #3fdcff;
-}
-
+.navbar nav a:hover,
 .navbar nav a.active {
     color: #3fdcff;
 }
 
-/* ====== CONTENT ====== */
+/* ===== CONTENT ===== */
 .content {
     max-width: 900px;
     margin: 140px auto 80px;
     padding: 0 20px;
 }
 
+/* ===== TITLE ===== */
 .title-box {
-    background: #062445;
-    border: 2px solid #3fdcff;
-    border-radius: 16px;
-    padding: 18px;
+    background: linear-gradient(135deg, #063a7a, #064a9c);
+    border-radius: 18px;
+    padding: 20px;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 35px;
+    box-shadow: 0 0 35px rgba(0, 140, 255, 0.25);
 }
 
+/* ===== SECTIONS ===== */
 .section {
-    background: #062445;
-    border: 2px solid #1b4f8c;
-    border-radius: 16px;
+    background: linear-gradient(135deg, #063a7a, #064a9c);
+    border-radius: 18px;
     padding: 22px;
     margin-bottom: 22px;
+    box-shadow: 0 0 30px rgba(0, 140, 255, 0.2);
 }
 
 .section h2 {
@@ -150,5 +149,6 @@ body {
 
 </body>
 </html>
+
 
 
