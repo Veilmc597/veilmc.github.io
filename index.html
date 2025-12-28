@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>VeilMC</title>
+<title>VeilMC – Serwer Minecraft</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -15,8 +15,8 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(180deg, #021b4f, #04318c);
-    color: #fff;
+    background: linear-gradient(180deg, #020f2e, #041a4f);
+    color: #ffffff;
 }
 
 /* ===== NAVBAR ===== */
@@ -24,8 +24,8 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: linear-gradient(180deg, #0b3fa5, #072e7a);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    background: linear-gradient(180deg, #062b6b, #041e4a);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.7);
 }
 
 .navbar-content {
@@ -40,74 +40,71 @@ body {
 .logo {
     font-size: 22px;
     font-weight: bold;
-    color: #33eaff;
+    color: #3defff;
 }
 
 .nav-links a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     margin-left: 25px;
     font-weight: bold;
-    transition: 0.2s;
 }
 
 .nav-links a:hover {
-    color: #33eaff;
+    color: #3defff;
 }
 
 /* ===== HERO ===== */
 .hero {
+    max-width: 1100px;
+    margin: 120px auto;
+    padding: 40px;
+    background: linear-gradient(180deg, #063aa5, #052b7a);
+    border-radius: 22px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.65);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #3defff;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #e6f2ff;
+}
+
+/* ===== BUTTONS ===== */
+.buttons {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.hero-box {
-    background: linear-gradient(180deg, #0a4ddc, #063aa0);
-    padding: 40px;
-    border-radius: 16px;
-    width: 500px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-}
-
-.hero-box h1 {
-    background: #33eaff;
-    color: #003b6f;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.hero-box p {
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
-
-.ip {
+.button {
+    padding: 14px 30px;
+    background: #3defff;
+    color: #012040;
+    text-decoration: none;
     font-weight: bold;
+    border-radius: 14px;
+    transition: 0.2s ease;
 }
 
-.copy-btn {
-    background: #33eaff;
-    color: #003b6f;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.copy-btn:hover {
-    background: #1bd1e6;
+.button:hover {
+    background: #ffffff;
+    transform: scale(1.05);
 }
 </style>
 </head>
 
 <body>
 
-<!-- ===== NAVBAR ===== -->
 <div class="navbar">
     <div class="navbar-content">
         <div class="logo">VeilMC</div>
@@ -121,20 +118,23 @@ body {
     </div>
 </div>
 
-<!-- ===== HERO ===== -->
 <div class="hero">
-    <div class="hero-box">
-        <h1>Witaj na VeilMC</h1>
-        <p>Najlepszy serwer Minecraft Survival z systemem gildii.</p>
-        <p class="ip">IP serwera: veilmc.pl</p>
-        <button class="copy-btn" onclick="navigator.clipboard.writeText('veilmc.pl')">
-            Skopiuj IP
-        </button>
+    <h1>VeilMC</h1>
+    <p>
+        Nowoczesny serwer Minecraft Survival z systemem gildii.<br>
+        Dołącz do społeczności, walcz, rozwijaj się i twórz własną historię.
+    </p>
+
+    <div class="buttons">
+        <a href="jak-zaczac.html" class="button">Jak zacząć?</a>
+        <a href="tryby.html" class="button">Tryby gry</a>
+        <a href="https://discord.gg/Az7JPxZZSz" class="button" target="_blank">Discord</a>
     </div>
 </div>
 
 </body>
 </html>
+
 
 
 
