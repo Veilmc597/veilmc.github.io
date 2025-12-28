@@ -1,54 +1,140 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <title>VeilMC</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>VeilMC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #021b4f, #04318c);
+    color: #fff;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(180deg, #0b3fa5, #072e7a);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+
+.navbar-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #33eaff;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #33eaff;
+}
+
+/* ===== HERO ===== */
+.hero {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.hero-box {
+    background: linear-gradient(180deg, #0a4ddc, #063aa0);
+    padding: 40px;
+    border-radius: 16px;
+    width: 500px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.hero-box h1 {
+    background: #33eaff;
+    color: #003b6f;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hero-box p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.ip {
+    font-weight: bold;
+}
+
+.copy-btn {
+    background: #33eaff;
+    color: #003b6f;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.copy-btn:hover {
+    background: #1bd1e6;
+}
+</style>
 </head>
+
 <body>
 
 <!-- ===== NAVBAR ===== -->
 <div class="navbar">
-  <div class="logo">VeilMC</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="tryby.html">Tryby</a></li>
-    <li><a href="jak-zaczac.html">Jak zacząć</a></li>
-    <li><a href="regulamin.html">Regulamin</a></li>
-    <li><a href="https://discord.gg/Az7JPxZZSz" target="_blank">Discord</a></li>
-  </ul>
+    <div class="navbar-content">
+        <div class="logo">VeilMC</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tryby.html">Tryby</a>
+            <a href="jak-zaczac.html">Jak zacząć</a>
+            <a href="regulamin.html">Regulamin</a>
+            <a href="https://discord.gg/Az7JPxZZSz" target="_blank">Discord</a>
+        </div>
+    </div>
 </div>
 
-<!-- ===== STRONA GŁÓWNA ===== -->
-<div class="container">
-  <div class="card">
-
-    <div class="card-title">Witaj na VeilMC</div>
-
-    <p style="margin-bottom: 15px;">
-      Najlepszy serwer Minecraft Survival z systemem gildii.
-    </p>
-
-    <p style="margin-bottom: 25px;">
-      <b>IP serwera:</b> veilmc.pl
-    </p>
-
-    <button onclick="navigator.clipboard.writeText('veilmc.pl')"
-      style="
-        background:#33f0ff;
-        border:none;
-        padding:12px 22px;
-        border-radius:12px;
-        font-weight:bold;
-        cursor:pointer;
-      ">
-      Skopiuj IP
-    </button>
-
-  </div>
+<!-- ===== HERO ===== -->
+<div class="hero">
+    <div class="hero-box">
+        <h1>Witaj na VeilMC</h1>
+        <p>Najlepszy serwer Minecraft Survival z systemem gildii.</p>
+        <p class="ip">IP serwera: veilmc.pl</p>
+        <button class="copy-btn" onclick="navigator.clipboard.writeText('veilmc.pl')">
+            Skopiuj IP
+        </button>
+    </div>
 </div>
 
 </body>
 </html>
+
 
 
