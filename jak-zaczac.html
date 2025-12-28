@@ -1,131 +1,35 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<title>Jak zacząć – VeilMC</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #020b1f, #041a3a);
-    color: #ffffff;
-}
-
-/* ===== HEADER ===== */
-header {
-    background: #031b44;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #1ef0ff;
-}
-
-header nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-}
-
-header nav a:hover {
-    color: #1ef0ff;
-}
-
-/* ===== CONTENT ===== */
-.main {
-    max-width: 900px;
-    margin: 120px auto;
-    padding: 20px;
-}
-
-.box {
-    background: linear-gradient(180deg, #04307a, #041f4a);
-    border-radius: 20px;
-    padding: 25px;
-    margin-bottom: 30px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.6);
-}
-
-.box h2 {
-    background: #1ef0ff;
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 12px;
-    display: inline-block;
-}
-
-.box p {
-    margin: 12px 0;
-}
-
-.discord-link {
-    color: #1ef0ff;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.discord-link:hover {
-    text-decoration: underline;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Jak zacząć - VeilMC</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <div class="logo">VeilMC</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="tryby.html">Tryby</a>
-        <a href="jak-zaczac.html">Jak zacząć</a>
-        <a href="regulamin.html">Regulamin</a>
-        <a href="https://discord.gg/Az7JPxZZSz" target="_blank">Discord</a>
-    </nav>
-</header>
+<div class="navbar">
+  <div class="logo">VeilMC</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="tryby.html">Tryby</a></li>
+    <li><a href="jak-zaczac.html">Jak zacząć</a></li>
+    <li><a href="regulamin.html">Regulamin</a></li>
+    <li><a href="https://discord.gg/Az7JPxZZSz" target="_blank">Discord</a></li>
+  </ul>
+</div>
 
-<div class="main">
-
-    <div class="box" style="text-align:center;">
-        <h2>Jak zacząć grę na VeilMC?</h2>
-    </div>
-
-    <div class="box">
-        <h2>Krok 1</h2>
-        <p>Uruchom <b>Minecraft Java Edition</b>.</p>
-    </div>
-
-    <div class="box">
-        <h2>Krok 2</h2>
-        <p>Wejdź w tryb <b>Multiplayer</b> i kliknij „Dodaj serwer”.</p>
-    </div>
-
-    <div class="box">
-        <h2>Krok 3</h2>
-        <p>Adres serwera: <b>veilmc.pl</b></p>
-    </div>
-
-    <div class="box">
-        <h2>Krok 4</h2>
-        <p>Dołącz na Discorda, aby otrzymywać informacje i pomoc:</p>
-        <p>
-            👉 <a class="discord-link" href="https://discord.gg/Az7JPxZZSz" target="_blank">
-            https://discord.gg/Az7JPxZZSz
-            </a>
-        </p>
-    </div>
-
+<div class="container">
+  <div class="card">
+    <div class="card-title">Jak zacząć?</div>
+    <ul>
+      <li>Uruchom Minecraft (1.20+)</li>
+      <li>Wejdź w Multiplayer</li>
+      <li>Dodaj serwer: <b>veilmc.pl</b></li>
+      <li>Dołącz i graj</li>
+    </ul>
+  </div>
 </div>
 
 </body>
 </html>
-
-
-
 
