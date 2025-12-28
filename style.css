@@ -2,22 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    min-height: 100vh;
-    background: linear-gradient(180deg, #041a3a, #052a5a);
+    background: linear-gradient(180deg, #0a1a33, #08162b);
     color: #fff;
+    min-height: 100vh;
 }
 
-/* ===== GÓRNY PASEK ===== */
-.navbar {
+/* ===== NAVBAR ===== */
+header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: linear-gradient(90deg, #062e63, #0a4ca3);
-    padding: 15px 40px;
+    background: #0b1f3f;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,51 +35,69 @@ body {
     color: #00eaff;
 }
 
-.nav-links a {
+.navbar a {
     margin-left: 20px;
-    color: #fff;
     text-decoration: none;
+    color: #fff;
     font-weight: 500;
 }
 
-.nav-links a:hover {
+.navbar a:hover {
     color: #00eaff;
 }
 
-/* ===== KONTENER ===== */
-.container {
+/* ===== MAIN ===== */
+main {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 80px 20px;
 }
 
-/* ===== KARTA ===== */
+/* ===== CARD ===== */
 .card {
-    background: #083b85;
-    padding: 30px 40px;
-    border-radius: 15px;
-    max-width: 600px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 520px;
     width: 100%;
-    box-shadow: 0 0 40px rgba(0,0,0,.4);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
 }
 
 .card h1 {
     background: #00eaff;
-    color: #002b4f;
-    padding: 10px;
+    color: #002244;
+    padding: 12px;
     border-radius: 10px;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.card p, .card li {
-    margin-bottom: 10px;
-    line-height: 1.5;
+.card h2 {
+    color: #00eaff;
+    margin-top: 20px;
+    margin-bottom: 8px;
 }
 
 .card ul {
     margin-left: 20px;
+}
+
+.card li {
+    margin-bottom: 6px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar a {
+        margin: 0 10px;
+    }
 }
 
 
