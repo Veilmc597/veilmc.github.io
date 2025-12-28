@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<title>VeilMC</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>VeilMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-<header>
-    <div class="navbar">
-        <div class="logo">VeilMC</div>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="tryby.html">Tryby</a>
-            <a href="jak-zaczac.html">Jak zacząć</a>
-            <a href="regulamin.html">Regulamin</a>
-            <a href="https://discord.gg/TWOJ_LINK" target="_blank">Discord</a>
-        </div>
+<div class="navbar">
+    <div class="logo">VeilMC</div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="tryby.html">Tryby</a>
+        <a href="jak-zaczac.html">Jak zacząć</a>
+        <a href="regulamin.html">Regulamin</a>
+        <a href="https://discord.gg/rFRwxSsYxY" target="_blank">Discord</a>
     </div>
-</header>
+</div>
 
-<main>
+<div class="container home">
     <div class="card">
         <h1>Witaj na VeilMC</h1>
-        <p>Najlepszy server Minecraft Survival z systemem gildii.</p>
-        <br>
-        <p><strong>IP serwera:</strong> veilmc.pl</p>
+        <p>Najlepszy serwer Minecraft Survival z systemem gildii.</p>
+        <span id="ip" class="copy-ip" onclick="copyIP()">
+            IP: veilmc.pl (kliknij aby skopiować)
+        </span>
     </div>
-</main>
+</div>
 
 </body>
 </html>
