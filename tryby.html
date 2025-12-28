@@ -1,104 +1,47 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<title>Tryby – VeilMC</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #020b1f, #041a3a);
-    color: #ffffff;
-}
-
-header {
-    background: #031b44;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-}
-
-header a:hover {
-    color: #1ef0ff;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 120px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: linear-gradient(180deg, #04307a, #041f4a);
-    border-radius: 20px;
-    padding: 30px;
-    width: 320px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.6);
-}
-
-.card h2 {
-    background: #1ef0ff;
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 12px;
-    display: inline-block;
-}
-
-.card ul {
-    margin-top: 20px;
-}
-
-.card li {
-    margin-bottom: 10px;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Tryby - VeilMC</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <div style="font-size:22px;font-weight:bold;color:#1ef0ff;">VeilMC</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="tryby.html">Tryby</a>
-        <a href="jak-zaczac.html">Jak zacząć</a>
-        <a href="regulamin.html">Regulamin</a>
-        <a href="https://discord.gg/Az7JPxZZSz" target="_blank">Discord</a>
-    </nav>
-</header>
+<div class="navbar">
+  <div class="logo">VeilMC</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="tryby.html">Tryby</a></li>
+    <li><a href="jak-zaczac.html">Jak zacząć</a></li>
+    <li><a href="regulamin.html">Regulamin</a></li>
+    <li><a href="https://discord.gg/Az7JPxZZSz" target="_blank">Discord</a></li>
+  </ul>
+</div>
 
 <div class="container">
+  <div class="cards">
 
-    <div class="card">
-        <h2>Survival + Gildie</h2>
-        <ul>
-            <li>Klasyczny survival</li>
-            <li>PvP i rywalizacja</li>
-            <li>System gildii</li>
-        </ul>
+    <div class="card small">
+      <div class="card-title">Survival + Gildie</div>
+      <ul>
+        <li>Klasyczny survival</li>
+        <li>PvP i rywalizacja</li>
+        <li>System gildii</li>
+      </ul>
     </div>
 
-    <div class="card">
-        <h2>Lifesteal</h2>
-        <ul>
-            <li>Zabijasz → kradniesz serca</li>
-            <li>Maksymalnie 15 serc</li>
-        </ul>
+    <div class="card small">
+      <div class="card-title">Lifesteal</div>
+      <ul>
+        <li>Zabijasz → kradniesz serca</li>
+        <li>Maksymalnie 15 serc</li>
+      </ul>
     </div>
 
+  </div>
 </div>
 
 </body>
 </html>
+
 
