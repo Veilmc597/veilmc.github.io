@@ -1,139 +1,163 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<title>VeilMC – Serwer Minecraft</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>VeilMC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
-body {
-    min-height: 100vh;
-    background: linear-gradient(180deg, #020f2e, #041a4f);
-    color: #ffffff;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b1c2d;
+            color: #ffffff;
+        }
 
-/* NAVBAR – JAK NA REGULAMINIE */
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: #041e4a; /* identyczny spokojny ciemny niebieski */
-    box-shadow: 0 4px 20px rgba(0,0,0,0.7);
-}
+        /* GÓRNY PASEK – Taki sam jak na Trybach */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 25, 45, 0.95);
+            backdrop-filter: blur(6px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            z-index: 1000;
+        }
 
-.navbar-content {
-    max-width: 1200px;
-    margin: auto;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .navbar .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #4aa3ff;
+        }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #3defff;
-}
+        .navbar .links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
 
-.nav-links a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 25px;
-    font-weight: bold;
-}
+        .navbar .links a:hover {
+            color: #4aa3ff;
+        }
 
-.nav-links a:hover {
-    color: #3defff;
-}
+        /* STRONA GŁÓWNA */
+        .hero {
+            padding-top: 140px;
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
 
-/* HERO */
-.hero {
-    max-width: 1100px;
-    margin: 120px auto;
-    padding: 40px;
-    background: linear-gradient(180deg, #063aa5, #052b7a);
-    border-radius: 22px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.65);
-    text-align: center;
-}
+        .hero-text {
+            max-width: 500px;
+        }
 
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 15px;
-    color: #3defff;
-}
+        .hero-text h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
 
-.hero p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 35px;
-    color: #e6f2ff;
-}
+        .hero-text p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
 
-/* COPY BUTTON */
-.copy-btn {
-    padding: 16px 40px;
-    background: #3defff;
-    color: #012040;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 16px;
-    cursor: pointer;
-    transition: 0.2s ease;
-}
+        /* PRZYCISK IP */
+        .ip-box {
+            margin-top: 30px;
+            display: inline-block;
+            background: #122c47;
+            padding: 15px 25px;
+            border-radius: 14px;
+            cursor: pointer;
+            font-size: 20px;
+            border: 2px solid #4aa3ff;
+            transition: background 0.2s, transform 0.1s;
+        }
 
-.copy-btn:hover {
-    background: #ffffff;
-    transform: scale(1.05);
-}
-</style>
+        .ip-box:hover {
+            background: #183c5f;
+            transform: scale(1.03);
+        }
+
+        .copied {
+            margin-top: 10px;
+            color: #4aa3ff;
+            font-size: 14px;
+            display: none;
+        }
+
+        /* FILM */
+        .hero-video video {
+            width: 420px;
+            border-radius: 16px;
+            border: 2px solid #1f4e79;
+        }
+
+        @media (max-width: 900px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-video video {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
-
 <body>
 
+<!-- NAVBAR -->
 <div class="navbar">
-    <div class="navbar-content">
-        <div class="logo">VeilMC</div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="tryby.html">Tryby</a>
-            <a href="jak-zaczac.html">Jak zacząć</a>
-            <a href="regulamin.html">Regulamin</a>
-            <a href="https://discord.gg/Az7JPxZZSz" target="_blank">Discord</a>
-        </div>
+    <div class="logo">VeilMC</div>
+    <div class="links">
+        <a href="index.html">Home</a>
+        <a href="tryby.html">Tryby</a>
+        <a href="jak-zaczac.html">Jak zacząć</a>
+        <a href="regulamin.html">Regulamin</a>
+        <a href="https://discord.gg/Az7JPxZZSz" target="_blank">Discord</a>
     </div>
 </div>
 
-<div class="hero">
-    <h1>VeilMC</h1>
-    <p>
-        Nowoczesny serwer Minecraft Survival z systemem gildii.<br>
-        Dołącz do społeczności, walcz, rozwijaj się i twórz własną historię.
-    </p>
+<!-- STRONA GŁÓWNA -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>VeilMC.pl</h1>
+        <p>Survival + Gildie • Lifesteal • Społeczność</p>
 
-    <button class="copy-btn" onclick="copyIP()">📋 Kopiuj IP: veilmc.pl</button>
-</div>
+        <div class="ip-box" onclick="copyIP()">
+            IP: veilmc.pl
+        </div>
+        <div class="copied" id="copiedText">✔ Skopiowano IP!</div>
+    </div>
+
+    <div class="hero-video">
+        <video src="veilmc-film.mp4" autoplay loop muted playsinline></video>
+    </div>
+</section>
 
 <script>
-function copyIP() {
-    navigator.clipboard.writeText("veilmc.pl");
-    alert("IP serwera skopiowane: veilmc.pl");
-}
+    function copyIP() {
+        navigator.clipboard.writeText("veilmc.pl");
+        const text = document.getElementById("copiedText");
+        text.style.display = "block";
+        setTimeout(() => {
+            text.style.display = "none";
+        }, 2000);
+    }
 </script>
 
 </body>
 </html>
-
-
-
-
-
