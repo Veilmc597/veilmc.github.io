@@ -19,7 +19,7 @@ body {
     color: #ffffff;
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 .navbar {
     position: sticky;
     top: 0;
@@ -54,7 +54,7 @@ body {
     color: #3defff;
 }
 
-/* ===== HERO ===== */
+/* HERO */
 .hero {
     max-width: 1100px;
     margin: 120px auto;
@@ -74,29 +74,24 @@ body {
 .hero p {
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     color: #e6f2ff;
 }
 
-/* ===== BUTTONS ===== */
-.buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.button {
-    padding: 14px 30px;
+/* COPY BUTTON */
+.copy-btn {
+    padding: 16px 40px;
     background: #3defff;
     color: #012040;
-    text-decoration: none;
     font-weight: bold;
-    border-radius: 14px;
+    font-size: 18px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
     transition: 0.2s ease;
 }
 
-.button:hover {
+.copy-btn:hover {
     background: #ffffff;
     transform: scale(1.05);
 }
@@ -125,15 +120,19 @@ body {
         Dołącz do społeczności, walcz, rozwijaj się i twórz własną historię.
     </p>
 
-    <div class="buttons">
-        <a href="jak-zaczac.html" class="button">Jak zacząć?</a>
-        <a href="tryby.html" class="button">Tryby gry</a>
-        <a href="https://discord.gg/Az7JPxZZSz" class="button" target="_blank">Discord</a>
-    </div>
+    <button class="copy-btn" onclick="copyIP()">📋 Kopiuj IP: veilmc.pl</button>
 </div>
+
+<script>
+function copyIP() {
+    navigator.clipboard.writeText("veilmc.pl");
+    alert("IP serwera skopiowane: veilmc.pl");
+}
+</script>
 
 </body>
 </html>
+
 
 
 
