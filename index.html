@@ -4,32 +4,51 @@
   <meta charset="UTF-8">
   <title>VeilMC</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
 <body>
 
-<header>
-  <div class="nav">
-    <div class="logo">VeilMC</div>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="tryby.html">Tryby</a>
-      <a href="jak-zaczac.html">Jak zacząć</a>
-      <a href="regulamin.html">Regulamin</a>
-      <a href="https://discord.gg/rFRwxSsYxY" target="_blank">Discord</a>
-    </div>
-  </div>
-</header>
+<!-- ===== NAVBAR ===== -->
+<div class="navbar">
+  <div class="logo">VeilMC</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="tryby.html">Tryby</a></li>
+    <li><a href="jak-zaczac.html">Jak zacząć</a></li>
+    <li><a href="regulamin.html">Regulamin</a></li>
+    <li><a href="https://discord.gg/Az7JPxZZSz" target="_blank">Discord</a></li>
+  </ul>
+</div>
 
+<!-- ===== STRONA GŁÓWNA ===== -->
 <div class="container">
   <div class="card">
-    <h1>Witaj na VeilMC</h1>
-    <p>Najlepszy serwer Minecraft Survival z systemem gildii.</p>
-    <p><strong>IP serwera:</strong> veilmc.pl</p>
-    <button id="copyBtn" class="copy-btn" onclick="copyIP()">Skopiuj IP</button>
+
+    <div class="card-title">Witaj na VeilMC</div>
+
+    <p style="margin-bottom: 15px;">
+      Najlepszy serwer Minecraft Survival z systemem gildii.
+    </p>
+
+    <p style="margin-bottom: 25px;">
+      <b>IP serwera:</b> veilmc.pl
+    </p>
+
+    <button onclick="navigator.clipboard.writeText('veilmc.pl')"
+      style="
+        background:#33f0ff;
+        border:none;
+        padding:12px 22px;
+        border-radius:12px;
+        font-weight:bold;
+        cursor:pointer;
+      ">
+      Skopiuj IP
+    </button>
+
   </div>
 </div>
 
 </body>
 </html>
+
 
