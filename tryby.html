@@ -16,13 +16,14 @@
             padding-top: 90px;
         }
 
-        /* ===== NAVBAR (jak na stronie głównej) ===== */
+        /* ===== NAVBAR – IDENTYCZNY JAK NA STRONIE GŁÓWNEJ ===== */
         .navbar {
             position: fixed;
             top: 0;
             width: 100%;
             height: 70px;
-            background: linear-gradient(90deg, #02164a, #032c7a);
+            background: rgba(10, 25, 45, 0.95);
+            backdrop-filter: blur(6px);
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -31,9 +32,9 @@
         }
 
         .logo {
-            color: #33f0ff;
             font-size: 22px;
             font-weight: bold;
+            color: #4aa3ff;
         }
 
         .navbar ul {
@@ -46,13 +47,14 @@
             text-decoration: none;
             color: #ffffff;
             font-weight: 500;
+            transition: color 0.2s;
         }
 
         .navbar ul li a:hover {
-            color: #33f0ff;
+            color: #4aa3ff;
         }
 
-        /* ===== KARTY – CIEMNE JAK WCZEŚNIEJ ===== */
+        /* ===== KARTY – JAK WCZEŚNIEJ ===== */
         .card {
             background: linear-gradient(180deg, #0433a3, #03246d);
             box-shadow: 0 0 40px rgba(0,0,0,0.45);
@@ -114,3 +116,4 @@
 
 </body>
 </html>
+
