@@ -53,6 +53,50 @@
     .navbar ul li a:hover {
       color: #4aa3ff;
     }
+
+    /* ===== KARTA ===== */
+    .card {
+      background: linear-gradient(180deg, #0433a3, #03246d);
+      border-radius: 20px;
+      padding: 35px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.45);
+      margin: auto;
+
+      /* 🔥 ANIMACJA */
+      transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+    }
+
+    /* 🔥 HOVER */
+    .card:hover {
+      transform: scale(1.06);
+      box-shadow:
+        0 0 30px rgba(51, 240, 255, 0.45),
+        0 0 60px rgba(0, 120, 255, 0.35);
+    }
+
+    .card-title {
+      background: #33f0ff;
+      color: #001a33;
+      padding: 12px 20px;
+      border-radius: 14px;
+      font-weight: bold;
+      margin-bottom: 22px;
+      display: inline-block;
+    }
+
+    .card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .card ul li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
   </style>
 </head>
 <body>
