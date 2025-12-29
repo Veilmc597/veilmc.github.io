@@ -16,7 +16,7 @@
             padding-top: 90px;
         }
 
-        /* ===== NAVBAR – IDENTYCZNY JAK NA STRONIE GŁÓWNEJ ===== */
+        /* ===== NAVBAR ===== */
         .navbar {
             position: fixed;
             top: 0;
@@ -54,15 +54,35 @@
             color: #4aa3ff;
         }
 
-        /* ===== KARTY – JAK WCZEŚNIEJ ===== */
+        /* ===== KARTA TRYBU ===== */
         .card {
             background: linear-gradient(180deg, #0433a3, #03246d);
+            border-radius: 20px;
+            padding: 35px;
+            width: 100%;
+            max-width: 420px;
             box-shadow: 0 0 40px rgba(0,0,0,0.45);
+            margin: auto;
         }
 
         .card-title {
             background: #33f0ff;
             color: #001a33;
+            padding: 12px 20px;
+            border-radius: 14px;
+            font-weight: bold;
+            margin-bottom: 22px;
+            display: inline-block;
+        }
+
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .card ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -83,37 +103,18 @@
 <!-- TREŚĆ -->
 <div class="container column">
 
-    <div class="cards">
-        <div class="card small">
-            <div class="card-title">Survival + Gildie</div>
-            <ul>
-                <li>Klasyczny survival</li>
-                <li>System gildii</li>
-                <li>Ekonomia i handel</li>
-            </ul>
-        </div>
-
-        <div class="card small">
-            <div class="card-title">Lifesteal</div>
-            <ul>
-                <li>Kradzież serc</li>
-                <li>PvP non-stop</li>
-                <li>Ryzyko i adrenalina</li>
-            </ul>
-        </div>
-
-        <div class="card small">
-            <div class="card-title">Społeczność</div>
-            <ul>
-                <li>Aktywny Discord</li>
-                <li>Eventy</li>
-                <li>Administracja 24/7</li>
-            </ul>
-        </div>
+    <div class="card">
+        <div class="card-title">SV + LIFESTEAL</div>
+        <ul>
+            <li>• Survival z urozmaiceniami</li>
+            <li>• System gildii</li>
+            <li>• Ekonomia i handel</li>
+            <li>• System kapliczek</li>
+            <li>• Kradzież serc</li>
+        </ul>
     </div>
 
 </div>
 
 </body>
 </html>
-
