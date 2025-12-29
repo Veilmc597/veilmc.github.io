@@ -11,41 +11,45 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #0b1c2d;
+            background: linear-gradient(180deg, #020b24 0%, #041a46 100%);
             color: #ffffff;
-            padding-top: 100px; /* ← KLUCZ: treść nie wchodzi pod navbar */
+            padding-top: 90px;
         }
 
-        /* ===== NAVBAR – IDENTYCZNY JAK NA STRONIE GŁÓWNEJ ===== */
+        /* ===== NAVBAR (jak na stronie głównej) ===== */
         .navbar {
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(10, 25, 45, 0.95);
-            backdrop-filter: blur(6px);
+            height: 70px;
+            background: linear-gradient(90deg, #02164a, #032c7a);
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 15px 40px;
+            justify-content: space-between;
+            padding: 0 40px;
             z-index: 1000;
         }
 
-        .navbar .logo {
+        .logo {
+            color: #33f0ff;
             font-size: 22px;
             font-weight: bold;
-            color: #4aa3ff;
         }
 
-        .navbar .links a {
-            color: #ffffff;
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .navbar ul li a {
             text-decoration: none;
-            margin-left: 20px;
+            color: #ffffff;
             font-weight: 500;
-            transition: color 0.2s;
         }
 
-        .navbar .links a:hover {
-            color: #4aa3ff;
+        .navbar ul li a:hover {
+            color: #33f0ff;
         }
     </style>
 </head>
@@ -54,20 +58,50 @@
 <!-- NAVBAR -->
 <div class="navbar">
     <div class="logo">VeilMC</div>
-    <div class="links">
-        <a href="index.html">Home</a>
-        <a href="tryby.html">Tryby</a>
-        <a href="jak-zaczac.html">Jak zacząć</a>
-        <a href="regulamin.html">Regulamin</a>
-        <a href="https://discord.gg/Az7JPxZZSz" target="_blank">Discord</a>
-    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tryby.html">Tryby</a></li>
+        <li><a href="jak-zaczac.html">Jak zacząć</a></li>
+        <li><a href="regulamin.html">Regulamin</a></li>
+        <li><a href="https://discord.gg/Az7JPxZZSz" target="_blank">Discord</a></li>
+    </ul>
 </div>
 
-<!-- ===== TWOJA TREŚĆ TRYBÓW (NIC NIE USUNIĘTE) ===== -->
+<!-- TREŚĆ STRONY TRYBY -->
 <div class="container column">
-    <!-- TU SĄ TWOJE KARTY / OPISY TRYBÓW -->
+
+    <div class="cards">
+        <div class="card small">
+            <div class="card-title">Survival + Gildie</div>
+            <ul>
+                <li>Klasyczny survival</li>
+                <li>System gildii</li>
+                <li>Ekonomia i handel</li>
+            </ul>
+        </div>
+
+        <div class="card small">
+            <div class="card-title">Lifesteal</div>
+            <ul>
+                <li>Kradzież serc</li>
+                <li>PvP non-stop</li>
+                <li>Ryzyko i adrenalina</li>
+            </ul>
+        </div>
+
+        <div class="card small">
+            <div class="card-title">Społeczność</div>
+            <ul>
+                <li>Aktywny Discord</li>
+                <li>Eventy</li>
+                <li>Administracja 24/7</li>
+            </ul>
+        </div>
+    </div>
+
 </div>
 
 </body>
 </html>
+
 
