@@ -13,47 +13,57 @@
     font-family: Arial, sans-serif;
 }
 
-/* TŁO STRONY – BARDZO CIEMNY GRANAT */
 body {
     min-height: 100vh;
     background: #010b18;
     color: #ffffff;
+    padding-top: 90px;
 }
 
-/* GÓRNY PASEK – DUŻO CIEMNIEJSZY */
-header {
-    background: #041a3a;
-    padding: 18px 60px;
+/* ===== NAVBAR ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(10, 25, 45, 0.95);
+    backdrop-filter: blur(6px);
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 1000;
 }
 
-header .logo {
+.logo {
     font-size: 22px;
     font-weight: bold;
-    color: #1fe6ff;
+    color: #4aa3ff;
 }
 
-header nav a {
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a {
     color: #ffffff;
     text-decoration: none;
-    margin-left: 22px;
     font-weight: 500;
 }
 
-header nav a:hover {
-    text-decoration: underline;
+.navbar ul li a:hover {
+    color: #4aa3ff;
 }
 
-/* GŁÓWNA SEKCJA */
+/* ===== TREŚĆ ===== */
 .main {
     max-width: 1100px;
     margin: 60px auto;
     padding: 0 20px;
 }
 
-/* TYTUŁ */
 .title-box {
     background: #05265c;
     border-radius: 14px;
@@ -64,7 +74,6 @@ header nav a:hover {
     margin-bottom: 30px;
 }
 
-/* PROSTOKĄTY – MOCNO CIEMNY GRANAT */
 .rule-box {
     background: #031f4a;
     border-radius: 18px;
@@ -86,16 +95,17 @@ header nav a:hover {
 
 <body>
 
-<header>
+<!-- NAVBAR -->
+<div class="navbar">
     <div class="logo">VeilMC</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="tryby.html">Tryby</a>
-        <a href="jak-zaczac.html">Jak zacząć</a>
-        <a href="regulamin.html">Regulamin</a>
-        <a href="#">Discord</a>
-    </nav>
-</header>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tryby.html">Tryby</a></li>
+        <li><a href="jak-zaczac.html">Jak zacząć</a></li>
+        <li><a href="regulamin.html">Regulamin</a></li>
+        <li><a href="https://discord.gg/Az7JPxZZSz" target="_blank">Discord</a></li>
+    </ul>
+</div>
 
 <div class="main">
 
@@ -105,15 +115,15 @@ header nav a:hover {
         <h2>1. Postanowienia ogólne</h2>
         <p>1.1. Niniejszy regulamin określa zasady korzystania z serwera Minecraft Survival z systemem gildii (dalej: „Serwer”).</p>
         <p>1.2. Korzystanie z Serwera oznacza akceptację niniejszego regulaminu w całości.</p>
-        <p>1.3. Administracja Serwera zastrzega sobie prawo do zmiany regulaminu w dowolnym momencie, o czym poinformuje graczy na stronie internetowej lub w komunikatach na Serwerze.</p>
+        <p>1.3. Administracja Serwera zastrzega sobie prawo do zmiany regulaminu w dowolnym momencie.</p>
     </div>
 
     <div class="rule-box">
         <h2>2. Zasady ogólne</h2>
         <p>2.1. Na Serwerze obowiązuje kultura osobista i wzajemny szacunek wobec innych graczy oraz administracji.</p>
         <p>2.2. Zabrania się używania wulgaryzmów, obrażania innych graczy, prowokowania konfliktów oraz wszelkich form dyskryminacji.</p>
-        <p>2.3. Niedozwolone jest korzystanie z cheatów, hacków, modów dających nieuczciwą przewagę oraz wszelkich programów ingerujących w rozgrywkę.</p>
-        <p>2.4. Każdy gracz odpowiada za swoje konto i jest zobowiązany do nieudostępniania go osobom trzecim.</p>
+        <p>2.3. Niedozwolone jest korzystanie z cheatów, hacków, modów dających nieuczciwą przewagę oraz programów ingerujących w rozgrywkę.</p>
+        <p>2.4. Każdy gracz odpowiada za swoje konto i nie może go udostępniać osobom trzecim.</p>
         <p>2.5. Reklamowanie innych serwerów lub usług bez zgody administracji jest zabronione.</p>
     </div>
 
@@ -125,20 +135,20 @@ header nav a:hover {
     <div class="rule-box">
         <h2>4. Zasady dotyczące rozgrywki</h2>
         <p>4.1. Wszelkie błędy gry (bugi) należy zgłaszać administracji, a nie wykorzystywać ich do własnej korzyści.</p>
-        <p>4.2. Zabronione jest tworzenie mechanizmów mogących powodować nadmierne obciążenie serwera.</p>
+        <p>4.2. Zabronione jest tworzenie mechanizmów powodujących nadmierne obciążenie serwera.</p>
     </div>
 
     <div class="rule-box">
         <h2>5. Kary i sankcje</h2>
-        <p>5.1. Za naruszenie regulaminu przewidziane są kary, takie jak ostrzeżenia, tymczasowe lub stałe bany na Serwerze.</p>
-        <p>5.2. Decyzje administracji są ostateczne i nie podlegają dyskusji na publicznych czatach.</p>
-        <p>5.3. Gracz ukarany ma prawo odwołać się do administracji poprzez stworzenie ticketa na discordzie.</p>
+        <p>5.1. Za naruszenie regulaminu przewidziane są kary: ostrzeżenia, bany tymczasowe lub stałe.</p>
+        <p>5.2. Decyzje administracji są ostateczne.</p>
+        <p>5.3. Gracz może odwołać się poprzez ticket na Discordzie.</p>
     </div>
 
     <div class="rule-box">
         <h2>6. Postanowienia końcowe</h2>
-        <p>6.1. Korzystanie z Serwera oznacza zgodę na przetwarzanie danych osobowych zgodnie z polityką prywatności.</p>
-        <p>6.2. Regulamin wchodzi w życie z dniem jego opublikowania na stronie Serwera.</p>
+        <p>6.1. Korzystanie z Serwera oznacza zgodę na przetwarzanie danych osobowych.</p>
+        <p>6.2. Regulamin wchodzi w życie z dniem publikacji.</p>
     </div>
 
 </div>
